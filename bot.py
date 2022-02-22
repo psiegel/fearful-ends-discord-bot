@@ -1,4 +1,5 @@
 import discord
+import json
 
 class MyClient(discord.Client):
   async def on_ready(self):
@@ -12,5 +13,10 @@ class MyClient(discord.Client):
     if message.content == '!ping':
       await message.channel.send('pong')
 
+
+f = open('auth.json')
+auth = json.load(f)
+f.close()
+
 client = MyClient()
-client.run('OTQ1NjY2NjAzNzA4NzI3MzI2.YhTepw.ufjJDJV3Wa5aFS-fQFBS7pQOEIs')
+client.run(auth['token'])
