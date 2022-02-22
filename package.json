@@ -1,0 +1,11 @@
+{
+  "name": "fearful-ends-bot",
+  "version": "1.0.0",
+  "description": "A bot for playing the Fearful Ends RPG over Discord",
+  "main": "bot.js",
+  "author": "Paul Siegel",
+  "dependencies": {
+    "discord.io": "https://github.com/woor/discord.io/tarball/gateway_v6",
+    "winston": "^3.6.0"
+  }
+}
